@@ -73,14 +73,13 @@ function NavBar(){
                     id="product-button"
                     title="Products"
                     rightIcon={<TiLocationArrow />}
-                    containerClass="bg-blue-50 md:flex hidden items-center
-                    justify-center gap-1"
+                    containerClass="flex items-center justify-center gap-1 bg-blue-50 px-4 py-2"
                     />
                 </div>
-                <div className="flex h-full items-center">
-                    <div >
+                <div className="flex h-full items-center md-hidden">
+                    <div className="hidden md:flex gap-4">
                         {navItems.map((item)=>(
-                            <a key={item} href={`#${item.toLowerCase()}`} className="nav-hover-btn">
+                            <a key={item} href={`#${item.toLowerCase()}`} className="nav-hover-btn ">
                                 {item}
                             </a>
                         ))}
