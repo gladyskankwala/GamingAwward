@@ -32,9 +32,10 @@ function About() {
             <div className="relative mb-8 mt-36 flex flex-col
             items-center gap-5">
                 <h2 className="font-general text-sm uppercase
-                md:text-[10px]">Welcome Zentry</h2>
+                md:text-[10px]">Welcome To Zentry</h2>
 
-                <AnimatedTitlf></AnimatedTitlf>
+                <AnimatedTitlf title="Discover the world's <br> largest <br> shared adventure"
+                containerClass="mt-5 !text-black text-center"></AnimatedTitlf>
 
                 
 
