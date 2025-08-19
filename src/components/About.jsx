@@ -23,8 +23,14 @@ function About() {
         clipAnimation.to('.mask-clip-path', {
             width: '100vw',
             height: '100vh',
-            borderRadius: 0
-        })
+            borderRadius: 0,
+            ease: 'power1.inOut'
+        }, 0)
+        clipAnimation.to("mask-clip-path img", {
+            scale: 1.3,
+            transformOrigin: 'center center',
+            ease: 'power1.inOut'
+        }, 0)
     })
 
     return(
@@ -35,11 +41,11 @@ function About() {
                 md:text-[10px]">Welcome To Zentry</h2>
 
                 <AnimatedTitlf title="Discover the world's <br> largest <br> shared adventure"
-                containerClass="mt-5 !text-black text-center"></AnimatedTitlf>
+                containerClass="mt-5  !text-black text-center"></AnimatedTitlf>
 
                 
 
-                <div className="about-subtext">
+                <div className="about-subtext mt-100">
                     <p>The Game of Games begins-your life, now an epic MMORPG</p>
                     <p>Zentry unites every player from countless games and platform</p>
                 </div>
