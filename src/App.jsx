@@ -2,6 +2,7 @@ import NavBar from "./components/NavBar"
 import Hero from "./components/Hero"
 import About from "./components/About"
 import Feature from "./components/Feature"
+import Story from "./components/Story"
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Hero></Hero>
       <About></About>
       <Feature></Feature>
+      <Story/>
     </main>
   )
 }
